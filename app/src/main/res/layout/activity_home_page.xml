@@ -14,7 +14,6 @@
         app:srcCompat="@drawable/reservo"
         tools:layout_editor_absoluteX="91dp"
         tools:layout_editor_absoluteY="34dp" />
-
     <TextView
         android:id="@+id/reservoTitle"
         android:layout_width="168dp"
