@@ -1,9 +1,7 @@
 package com.example.reservo;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,45 +19,39 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Signup extends AppCompatActivity {
+public class RePass extends AppCompatActivity {
 
-    EditText fName, lName, pNo, email, pw, confpw;
-    Button btnRegister;
-    String fn, ln, pn, e, passw, cpw;
+    EditText newpw, newconfpw;
+    Button btnNewPW;
+    String npw, ncpw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String num = getIntent().getStringExtra("RETRIEVENUMBER");
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_re_pass);
 
-        fName = (EditText) findViewById(R.id.createFname);
-        lName = (EditText) findViewById(R.id.createLname);
-        pNo = (EditText) findViewById(R.id.createPhone);
-        email = (EditText) findViewById(R.id.createEmail);
-        pw = (EditText) findViewById(R.id.createPassword);
-        confpw = (EditText) findViewById(R.id.confirmPassword);
+        newpw = (EditText) findViewById(R.id.newPW);
+        newconfpw = (EditText) findViewById(R.id.confNewPW);
 
-        btnRegister = (Button) findViewById(R.id.btnRgstr);
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnNewPW = (Button) findViewById(R.id.btnConfCode);
+        btnNewPW.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fn = fName.getText().toString();
-                ln = lName.getText().toString();
-                pn = pNo.getText().toString();
-                e = email.getText().toString();
-                passw = pw.getText().toString();
-                cpw = confpw.getText().toString();
+                npw = newpw.getText().toString();
+                ncpw = newconfpw.getText().toString();
 
-                if(passw.equals(cpw)) {
+                if(npw.equals(ncpw)) {
                     RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-                    String url ="http://10.0.2.2/reservo/register.php";
+                    String url ="http://10.0.2.2/reservo/newpw.php";
                     StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                             new Response.Listener<String>() {
                                 @Override
                                 public void onResponse(String response) {
                                     if(response.equals("success")) {
-                                        Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), Login.class);
+                                        Toast.makeText(getApplicationContext(), "Update successful!", Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(getApplicationContext(), HomePage.class);
                                         startActivity(intent);
                                         finish();
                                     }
@@ -75,11 +67,8 @@ public class Signup extends AppCompatActivity {
                     }){
                         protected Map<String, String> getParams(){
                             Map<String, String> paramV = new HashMap<>();
-                            paramV.put("firstName", fn);
-                            paramV.put("lastName", ln);
-                            paramV.put("phoneNumber", pn);
-                            paramV.put("email", e);
-                            paramV.put("password", passw);
+                            paramV.put("num", num);
+                            paramV.put("password", npw);
                             return paramV;
                         }
                     };
@@ -88,6 +77,7 @@ public class Signup extends AppCompatActivity {
                 else {
                     Toast.makeText(getApplicationContext(), "Passwords do not match. Try again.", Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
     }

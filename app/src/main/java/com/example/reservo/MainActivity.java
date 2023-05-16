@@ -42,7 +42,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openLogin() {
-        Intent intent = new Intent(this, Login.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, Login.class);
+//        startActivity(intent);
+
+        Intent i = new Intent(this, Login.class);
+        startActivity(i);
     }
 }

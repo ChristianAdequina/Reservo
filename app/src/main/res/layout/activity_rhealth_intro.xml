@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/whitebg"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    tools:context=".ForgotPW">
+    android:background="@drawable/whitebg"
+    tools:context=".RHealthIntro">
+
 
     <ImageView
         android:id="@+id/imageView2"
@@ -20,16 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.173"
-        app:srcCompat="@drawable/lock" />
+        app:srcCompat="@drawable/reservohealth" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="356dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_medium"
-        android:text=" Forgot your password?"
+        android:text=" Welcome to ReservoHealth!"
         android:textColor="#000026"
-        android:textSize="30dp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -39,51 +38,48 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_medium"
-        android:text=" Reset your password by entering your email below"
+        android:gravity="center"
+        android:text="We're thrilled to have you on board and want to ensure that your healthcare experience with us is seamless and personalized. To make the most of our services, we kindly request you to share your medical history with us."
         android:textColor="#000026"
         android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
-
-
-    <EditText
-        android:id="@+id/retrieveEmail"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/loginrectangle"
-        android:drawableLeft="@drawable/baseline_local_phone_24"
-        android:drawablePadding="8dp"
-        android:hint="Phone Number"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.461" />
 
     <Button
-        android:id="@+id/btnRtrvEmail"
-        android:layout_width="215dp"
+        android:id="@+id/btnEnterMH"
+        android:layout_width="315dp"
         android:layout_height="37dp"
         android:background="@drawable/btn_bg"
         android:elevation="50dp"
         android:fontFamily="@font/montserrat_medium"
-        android:text="Send Code"
+        android:text="Fill up medical history"
         android:textColor="#000026"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.659" />
+        app:layout_constraintVertical_bias="0.651" />
+
+    <Button
+        android:id="@+id/btnSkipMH"
+        android:layout_width="315dp"
+        android:layout_height="37dp"
+        android:background="@drawable/btngray_bg"
+        android:elevation="50dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Skip for now"
+        android:textColor="#000026"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
