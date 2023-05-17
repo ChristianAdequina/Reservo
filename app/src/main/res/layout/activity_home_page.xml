@@ -35,190 +35,191 @@
         app:layout_constraintVertical_bias="0.035" />
 
 
-        <androidx.cardview.widget.CardView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="417dp"
         android:layout_height="540dp"
+        android:layout_marginTop="220dp"
         app:cardBackgroundColor="#B1E7FF"
         app:cardCornerRadius="35dp"
         app:cardElevation="20dp"
-        android:layout_marginTop="220dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-            <RelativeLayout
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/otherblue">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="329dp"
+                android:layout_height="67dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text=" What type of reservation would you like to make today?"
+                android:textAlignment="center"
+                android:textColor="#181813"
+                android:textSize="20sp" />
+
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/otherblue">
+                android:layout_height="400dp"
+                android:layout_marginTop="120dp">
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="329dp"
-                    android:layout_height="67dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="48dp"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:text=" What type of reservation would you like to make today?"
-                    android:textAlignment="center"
-                    android:textColor="#181813"
-                    android:textSize="20sp" />
-
-                <TableLayout
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
-                    android:layout_marginTop="120dp">
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="20dp"
-                        android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/reservofitness"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/reservofitness" />
 
-                        <ImageButton
-                            android:id="@+id/reservofitness"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/btn"
-                            android:padding="10dp"
-                            android:scaleType="fitCenter"
-                            app:srcCompat="@drawable/reservofitness" />
+                    <ImageButton
+                        android:id="@+id/reservohealth"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/reservohealth" />
 
-                        <ImageButton
-                            android:id="@+id/reservohealth"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/btn"
-                            android:padding="10dp"
-                            android:scaleType="fitCenter"
-                            app:srcCompat="@drawable/reservohealth" />
+                    <ImageButton
+                        android:id="@+id/reservolens"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/reservolens" />
+                </TableRow>
 
-                        <ImageButton
-                            android:id="@+id/reservolens"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/btn"
-                            android:padding="10dp"
-                            android:scaleType="fitCenter"
-                            app:srcCompat="@drawable/reservolens" />
-                    </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center">
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:gravity="center">
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text=" ReservoFitness"
+                        android:textAlignment="center"
+                        android:textColor="#181813" />
 
-                        <TextView
-                            android:id="@+id/textView21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text=" ReservoFitness"
-                            android:textAlignment="center"
-                            android:textColor="#181813" />
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text=" ReservoHealth"
+                        android:textAlignment="center"
+                        android:textColor="#181813" />
 
-                        <TextView
-                            android:id="@+id/textView22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text=" ReservoHealth"
-                            android:textAlignment="center"
-                            android:textColor="#181813" />
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text=" ReservoLens"
+                        android:textAlignment="center"
+                        android:textColor="#181813" />
 
-                        <TextView
-                            android:id="@+id/textView23"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text=" ReservoLens"
-                            android:textAlignment="center"
-                            android:textColor="#181813" />
+                </TableRow>
 
-                    </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="20dp"
-                        android:gravity="center">
+                    <ImageButton
+                        android:id="@+id/reservoglam"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/reservoglam" />
 
-                        <ImageButton
-                            android:id="@+id/reservoglam"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/btn"
-                            android:padding="10dp"
-                            android:scaleType="fitCenter"
-                            app:srcCompat="@drawable/reservoglam" />
+                    <ImageButton
+                        android:id="@+id/reservotravel"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/reservotravel" />
 
-                        <ImageButton
-                            android:id="@+id/reservotravel"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:background="@drawable/btn"
-                            android:padding="10dp"
-                            android:scaleType="fitCenter"
-                            app:srcCompat="@drawable/reservotravel" />
+                    <ImageButton
+                        android:id="@+id/reservofood"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/reservofood" />
+                </TableRow>
 
-                        <ImageButton
-                            android:id="@+id/reservofood"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/btn"
-                            android:padding="10dp"
-                            android:scaleType="fitCenter"
-                            app:srcCompat="@drawable/reservofood" />
-                    </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center">
 
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:gravity="center">
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text=" RservoGlam"
+                        android:textAlignment="center"
+                        android:textColor="#181813" />
 
-                        <TextView
-                            android:id="@+id/textView24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text=" RservoGlam"
-                            android:textAlignment="center"
-                            android:textColor="#181813" />
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text=" ReservoTravel"
+                        android:textAlignment="center"
+                        android:textColor="#181813" />
 
-                        <TextView
-                            android:id="@+id/textView25"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text=" ReservoTravel"
-                            android:textAlignment="center"
-                            android:textColor="#181813" />
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text=" ReservoFood"
+                        android:textAlignment="center"
+                        android:textColor="#181813" />
 
-                        <TextView
-                            android:id="@+id/textView26"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text=" ReservoFood"
-                            android:textAlignment="center"
-                            android:textColor="#181813" />
+                </TableRow>
 
-                    </TableRow>
-
-                </TableLayout>
-            </RelativeLayout>
+            </TableLayout>
+        </RelativeLayout>
 
 
-        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -247,17 +248,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="94dp"
-        android:layout_height="79dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177"
-        app:srcCompat="@drawable/baseline_person_24" />
+        app:layout_constraintVertical_bias="0.772" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
