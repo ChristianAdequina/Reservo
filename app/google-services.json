@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "542090921118",
+    "firebase_url": "https://reservo-230f4-default-rtdb.firebaseio.com",
+    "project_id": "reservo-230f4",
+    "storage_bucket": "reservo-230f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542090921118:android:667af0d2ef6ca4431fe78f",
+        "android_client_info": {
+          "package_name": "com.example.reservo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542090921118-askv367nmq95cgbrh859o748gdk8vsvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Ig1Xjy-l7YyGacRDiE9iJL7GEzrmw14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542090921118-askv367nmq95cgbrh859o748gdk8vsvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
