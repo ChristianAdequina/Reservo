@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tab_pressed_background">#ADD8E6</color>
+    <color name="tab_selected_background">#ADD8E6</color>
+    <color name="tab_default_background">#F5F5F5</color>
 </resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebg"
+    tools:context=".HistoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!-- booking_history_fragment.xml -->
+
+    <!-- history_tab_fragment.xml -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/reservoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:drawableStart="@drawable/reservo"
+            android:fontFamily="@font/montserrat_medium"
+            android:text=" Reservo"
+            android:textColor="#000080"
+            android:textSize="40sp" />
+
+        <!-- Navigator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Ongoing Schedule -->
+            <TextView
+                android:id="@+id/ongoing_schedule_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ongoing"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/tab_background"
+                android:textColor="#000" />
+
+            <!-- History -->
+            <TextView
+                android:id="@+id/history_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="History"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/tab_background"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <!-- Ongoing Schedule -->
+        <LinearLayout
+            android:id="@+id/ongoing_schedule_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="hello"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+
+
+            <!-- Ongoing schedule content goes here -->
+
+        </LinearLayout>
+
+        <!-- History -->
+        <LinearLayout
+            android:id="@+id/history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/vouchers_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hi"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="16dp"/>
+            <!-- History content goes here -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
